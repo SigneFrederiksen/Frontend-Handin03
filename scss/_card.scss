@@ -1,0 +1,11 @@
+// Card
+
+.card {
+    border: none;
+    background-color: $white;
+    transition: all .7s;
+
+    &:hover {
+        @include blog-shadow;
+    }
+}

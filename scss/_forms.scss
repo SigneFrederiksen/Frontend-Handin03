@@ -1,0 +1,20 @@
+// Forms
+
+.news {
+    margin: 50px 0;
+}
+
+.form-control {
+    border-radius: 30px;
+    height: 46px;
+    border: none;
+    padding: 0 30px;
+}
+
+@include media-breakpoint-up(xl) {
+    .form-control {
+        border-radius: 50px;
+        height: 66px;
+        border: none;
+    }
+}

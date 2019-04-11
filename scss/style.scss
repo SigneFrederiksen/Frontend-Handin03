@@ -1,0 +1,46 @@
+// Import the partials that I need
+
+// Bootstrap essentials
+@import "bootstrap/bootstrap";
+
+/*@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+
+// Bootstrap extras/components
+@import "bootstrap/reboot";
+@import "bootstrap/grid";
+@import "bootstrap/card";
+//// Navbar
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/dropdown";
+//// Forms
+@import "bootstrap/forms";
+@import "bootstrap/input-group";
+//// Buttons
+@import "bootstrap/buttons";
+//// Carousel
+@import "bootstrap/carousel";
+
+
+// Bootstrap utilities
+@import "bootstrap/utilities/flex";
+@import "bootstrap/utilities/position";
+@import "bootstrap/utilities/spacing";
+@import "bootstrap/utilities/text";*/
+
+
+// My styles
+@import "variables";
+@import "mixins";
+@import "functions";
+@import "breakpoints";
+@import "type";
+@import "navbar";
+@import "page";
+@import "carousel";
+@import "buttons";
+@import "card";
+@import "forms";

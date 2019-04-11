@@ -1,0 +1,38 @@
+// Navbar
+
+.navbar {
+    padding: 0.5rem 1rem;
+
+    a {
+        color: $spacy;
+    }
+}
+
+.navbar-brand {
+    font-size: 30px;
+    color: $spacy;
+}
+
+.nav-link {
+    padding-left: 0;
+}
+
+.nav-link:hover {
+    color: $white;
+    text-decoration: underline;
+}
+
+
+// Navbar media-cutoffs
+
+/*@include media-breakpoint-up(lg) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+}*/
+
+@include media-breakpoint-up(xl) {
+    .navbar {
+        padding: 25px 110px;
+    }
+}

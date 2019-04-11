@@ -1,0 +1,9 @@
+// Functions
+
+@function icon-hover($color) {
+    @return $color;
+}
+
+@function link-zoom($line) {
+    @return scale($line);
+}

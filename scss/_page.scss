@@ -1,0 +1,136 @@
+// Page
+
+html {
+    transition: all .7s;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    transition: all .7s;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-lightgrey {
+    background-color: $light-grey;
+}
+
+.bg-lightgreen {
+    background-color: $primary;
+    color: $white;
+}
+
+.bg-green {
+    background-color: $secondary;
+    color: $white;
+}
+
+.bg-footer {
+    background-color: $spacy;
+    border-bottom: 25px solid darken($spacy, 5%);
+}
+
+.z-index-1 {
+    z-index: -1;
+}
+
+.z-index1 {
+    z-index: 1;
+}
+
+.section {
+    padding: 60px 0 0 0;
+}
+
+.block-content {
+    margin: 0 0 30px;
+}
+
+.header {
+    margin-top: 71px;
+}
+
+footer {
+    color: $white;
+
+    a {
+        color: $white;
+        font-size: 12px;
+    }
+}
+
+.product-item {
+    background-image: url(/images/item-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all .7s;
+    cursor: pointer;
+
+    &:hover .product-content {
+        transition: all .7s;
+        @include item-zoom;
+    }
+
+    &:hover .btn-primary {
+        transition: all .7s;
+        background-color: icon-hover($secondary);
+    }
+
+}
+
+.product-content {
+    margin: 150px auto 25px 0px;
+    cursor: pointer;
+}
+
+
+// Page media-cutoffs
+@include media-breakpoint-up(md) {
+    .block-content {
+        width: 70%;
+        margin: 0 0 80px;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .container-fluid {
+        padding: 0;
+    }
+
+    .section {
+        padding: 0;
+        margin: 100px 95px;
+
+        &--block {
+            margin: 0;
+        }
+    }
+
+    .block-content {
+        width: 50%;
+        margin: 220px auto auto 95px;
+
+        &--full {
+            width: 245%;
+            /*margin-bottom: 200px;*/
+        }
+    }
+
+    .bg-footer {
+        border-bottom: none;
+    }
+
+    footer {
+        background-color: $spacy;
+        border-bottom: 25px solid darken($spacy, 5%);
+        padding: 100px 110px;
+    }
+
+    .product-content {
+        margin: 150px auto 25px 15px;
+    }
+}

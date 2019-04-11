@@ -1,0 +1,58 @@
+// Buttons
+
+.btn-primary {
+    background-color: $primary;
+    border: none;
+    border-radius: 50%;
+    height: 66px;
+    width: 70px;
+    font-weight: 500;
+    margin-bottom: 25px;
+
+    &:hover {
+        transition: all .7s;
+        background-color: icon-hover($secondary);
+    }
+
+    i {
+        color: $light-grey;
+    }
+}
+
+.btn-link {
+    color: $primary;
+
+    &:hover {
+        transition: all .7s;
+        color: darken($primary, 10%);
+        transform: link-zoom(1.3);
+
+    }
+
+    i {
+        font-size: 30px;
+    }
+}
+
+.btn-bigger {
+    height: 96px;
+    width: 100px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn-form {
+    height: 46px;
+    width: 50px;
+}
+
+i:before {
+    margin-right: 5px;
+}
+
+@include media-breakpoint-up(xl) {
+    .btn-form {
+        height: 66px;
+        width: 70px;
+    }
+}

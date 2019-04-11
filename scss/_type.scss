@@ -1,0 +1,106 @@
+// Typography
+
+body {
+    font-family: $body-text;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: $secondary;
+}
+
+h1 {
+    /*font-size: 72px;*/
+}
+
+h1.slider-subtitle {
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+h2 {
+    /*font-size: 24px;*/
+    margin-bottom: 15px;
+    /*line-height: 67px;*/
+    font-weight: 700;
+}
+
+h2.slider-title {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h3 {
+    /*font-size: 36px;*/
+    font-weight: 700;
+}
+
+h4 {
+    /*font-size: 24px;*/
+}
+
+.link {
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.card-text {
+    font-size: 14px;
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+
+.news-title {}
+
+.f-logo {
+    font-size: 48px;
+    color: $white;
+}
+
+.f-logo:hover {
+    color: $white;
+    text-decoration: none;
+}
+
+.f-title {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.f-copyright {
+    font-size: 12px;
+}
+
+
+// Type media-cutoffs
+
+@include media-breakpoint-up(md) {
+    h1 {
+        font-size: 96px;
+    }
+
+    h1.slider-subtitle {
+        line-height: 100px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    .news-title {
+        font-size: 36px;
+        line-height: normal;
+    }
+}

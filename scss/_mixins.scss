@@ -1,0 +1,14 @@
+// Mixins
+
+@mixin item-zoom {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+@mixin blog-shadow($horiz : 0, $vert : 4px, $blur : 50px, $spread : 0px, $color : $grey) {
+    -webkit-box-shadow: $horiz $vert $blur $spread $color;
+    -moz-box-shadow: $horiz $vert $blur $spread $color;
+    box-shadow: $horiz $vert $blur $spread $color;
+}
+
+/*background: linear-gradient($brand-primary, white);*/
